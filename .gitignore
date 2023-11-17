@@ -17,6 +17,8 @@ launchSettings.json
 # Build results
 [Dd]ebug/
 [Rr]elease/
+[Dd]ebug-Windows/
+[Rr]elease-Windows/
 *_i.c
 *_p.c
 *.ilk

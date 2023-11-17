@@ -1602,7 +1602,11 @@ public unsafe partial struct AVIOContext
     public int @max_packet_size;
     /// <summary>Try to buffer at least this amount of data before flushing it.</summary>
     public int @min_packet_size;
+#if WINDOWS_PLATFORM
+    public uint @checksum;
+#else
     public ulong @checksum;
+#endif
     public byte* @checksum_ptr;
     public AVIOContext_update_checksum_func @update_checksum;
     /// <summary>Pause or resume playback for network streaming protocols - e.g. MMS.</summary>
